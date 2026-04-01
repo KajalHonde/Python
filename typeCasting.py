@@ -1,4 +1,4 @@
-'''
+
 # converting float into integer
 x = 10.35
 print(x)
@@ -77,7 +77,7 @@ v = 0.0+1j
 t = bool(v)
 print(t)
 
-'''
+
 
 #other data type into string
 x=14 #int to string
@@ -89,3 +89,4 @@ t = 0.2
 r=str(t)
 print(type(r))
  
+
