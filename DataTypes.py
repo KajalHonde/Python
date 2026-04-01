@@ -42,3 +42,4 @@ print(s1 * 2)
 s1 = "python is very easy"
 s2 = "hello" 
 print(s1 + s2)
+
