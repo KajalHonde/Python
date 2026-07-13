@@ -107,7 +107,7 @@ a=10
 print(a<<2)
 print(a>>2)
 
-'''
+
 #Assignment operator
 #(+= , -= , *= , %= , **= , |= , >>= , <<= , ^= , &= , //= , /= , )
 
@@ -145,6 +145,24 @@ print(a)
 a%=b
 print(a)
 
+#ternary operator
+a,b = 10,5
+x=30 if a<b else 40
+print(x)
+
+a,b = 70,50
+a if a<=b else b
+print(a)
 
 
+n1=40
+n2=30
+print("n1 is max") if n1>=n2 else print("n2 is greater")
 
+
+age=15
+print("person is eligible") if age>=18 else print("person is not eligible")
+
+'''
+num =24
+print("num is odd") if num % 2 != 0 else print("num is even") 
