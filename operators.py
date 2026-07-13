@@ -184,7 +184,7 @@ print(n1 is not n2)
 
 '''
 
-#Membership operator
+#Membership operator : to check members
 s1 ="python is easy"
 s2 ="on"
 print(s2 in s1)
