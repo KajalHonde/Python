@@ -163,6 +163,30 @@ print("n1 is max") if n1>=n2 else print("n2 is greater")
 age=15
 print("person is eligible") if age>=18 else print("person is not eligible")
 
-'''
+
 num =24
 print("num is odd") if num % 2 != 0 else print("num is even") 
+
+#special operators
+# 1. ID operator
+n1=[10,20,30,40]
+n2=[10,20,30,40]
+print(id(n1))
+print(id(n2))
+
+print(n1 is n2)
+print(n1 is not n2)
+
+n1=10
+n2=10
+print(n1 is n2)
+print(n1 is not n2)
+
+'''
+
+#Membership operator
+s1 ="python is easy"
+s2 ="on"
+print(s2 in s1)
+s2= "on"
+print(s2 not in s1)
