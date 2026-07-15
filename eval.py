@@ -29,6 +29,9 @@ b= int(a)
 print(b)
 
 '''
+#command line arguement
+#python eval.py 10 20
+
 from sys import *
 print(argv)
 print(type(argv))
