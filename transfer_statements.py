@@ -1,4 +1,5 @@
 '''
+#break
 for i in range(10):
     if i==5:
         print(i)
@@ -38,7 +39,7 @@ for n in num:
      continue
     print("100/{}={}".format(n,100/n))
     
-
+#continue
 i=1
 while i<=10:
  if i==5:
@@ -55,13 +56,26 @@ while i <= 10:
     print(i, end=" ")
     i = i + 1
 
+#pass
+
 for x in range(1,50):
     if x%9==0:
         print(x)
     else:
         pass
-'''
+
+#4 else
 cart = [10,20,600,30,40,50]
+for item in cart:
+    if item>=500:
+        print("we cannot proceed")
+        break
+    print(item)
+else:
+    print("successfully done")
+    
+'''   
+cart = [10,20,30,40,50]
 for item in cart:
     if item>=500:
         print("we cannot proceed")
