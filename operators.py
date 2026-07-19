@@ -182,7 +182,7 @@ n2=10
 print(n1 is n2)
 print(n1 is not n2)
 
-'''
+
 
 #Membership operator : to check members
 s1 ="python is easy"
@@ -190,3 +190,9 @@ s2 ="on"
 print(s2 in s1)
 s2= "on"
 print(s2 not in s1)
+
+'''
+#comparision operator
+s1= "Python is easy"
+s2= "Python"
+print(s1>s2)
