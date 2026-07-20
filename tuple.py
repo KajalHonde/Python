@@ -35,21 +35,22 @@ print(sum(t))
 print(t.count(10))
 print(t.index(30))
 
+
+tuple packing and unpacking
+packing
+a=10
+b=20
+c=30
+d=40
+t=a,b,c,d
+print(t)
+#unpacking
+t=10,20,30,40,50
+a,b,c,d,e=t
+print("a",a,"\nb",b,"\nc",c,"\nd",d,"\ne",e)
 '''
-#tuple packing and unpacking
-#packing
-# a=10
-# b=20
-# c=30
-# d=40
-# t=a,b,c,d
-# print(t)
-# #unpacking
-# t=10,20,30,40,50
-# a,b,c,d,e=t
-# print("a",a,"\nb",b,"\nc",c,"\nd",d,"\ne",e)
 
 #tuple comprehension
 l1=[x for x in range(0,11) if x%2==0]
 print(l1)
-print(type(l1))
+print(type(l1))#generstor
