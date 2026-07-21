@@ -45,3 +45,5 @@ print(d)
 del d["name"]
 print(d)
 print(type(d))
+for x in d :
+    print(x)
