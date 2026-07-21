@@ -58,11 +58,13 @@ s3=s1.union(s2)
 print(s3)
 
 
-# intersection
+# intersection OR &
 s1={10,20,30,40,50}
 s2={10,20,30,40}
 s3=s1.intersection(s2)
+s3=s1&s2
 print(s3)
+
 
 # difference 
 s1={10,20,30,40,50}
@@ -70,9 +72,39 @@ s2={10,20,30,40}
 # s3=s1.difference(s2)
 s3=s1-s2
 print(s3)
-'''
+
 # symmetric difference
 s1={10,20,30,40,50}
 s2={10,20,30,40,70}
 s3=s1.symmetric_difference(s2)
 print(s3)
+
+
+s1={10,20,30,40,50}
+s2={10,20,30,40,90}
+s1.symmetric_difference_update(s2)
+# s1.difference_update(s2)
+# s1.intersection_update(s2)
+print(s1)
+
+
+#isdisjoint
+s1={10,20,30}
+s2={40,50,60}
+print(s1.isdisjoint(s2))
+
+
+#issubset, issuperset
+s1={10,20,30}
+s2={40,50,60,10,20,30}
+
+print(s1.issubset(s2))
+print(s2.issuperset(s1))
+print(s2.issubset(s1))
+print(s1.issuperset(s2))
+
+'''
+# WRITE A PROGRAM TO ELIMINATE DUPLICATES PRESENT IN THE LIST
+l=eval(input("list of values"))
+s=set(l)
+print(s)
