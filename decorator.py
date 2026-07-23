@@ -59,16 +59,16 @@ dfunction("tom")
             
 '''
 # decorator chaining
-def decor1(wish):
+def decor1(func):
     def inner(name):
         print("first decor")
-        wish(name)
+        func(name)
     return inner
 
-def decor2(wish):
+def decor2(func):
     def inner(name):
         print("second decor")
-        wish(name)
+        func(name)
     return inner
 
 @decor1
