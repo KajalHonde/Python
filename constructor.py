@@ -102,7 +102,7 @@ print("t2 instance variables are",t2.__dict__)
 t2.m1()
 print("t2 instance variabls are ",t2.__dict__)
 
-'''
+
 # static variable
 
 class Student():
@@ -125,3 +125,71 @@ s2.show()
 Student.loc="Manmad"
 s1.show()
 s2.show()
+
+
+class Test:
+    a=10
+    def __init__(self):
+        self.b=20
+       
+       
+print("a",Test.a)
+t1=Test()
+t2=Test()
+
+print(t1.a,"and",t1.b)
+print(t2.a,"and",t2.b)
+
+Test.a=100
+t1.b=203
+print(t1.a,"and",t1.b)
+print(t2.a,"and",t2.b)
+t1=Test()
+print("a",Test.a)
+# print("b",self.b)
+t=Test()
+print(t1.b)
+print(c)
+
+
+# declaring static variable
+'''
+class Test:
+    a=10
+    count=0
+    
+    def __init__(self):
+        Test.count+=1
+        Test.b=90
+          
+    def t1(self):
+        Test.c=30
+        print(Test.c)
+        
+    @classmethod
+    def clsmthd(cls):
+        Test.d=73
+        print(Test.d)
+        del cls.a
+        
+    @staticmethod
+    def stsmthd():
+        Test.f=40
+        print(Test.f)
+        
+        
+t=Test()
+t1=Test()
+print("a",Test.a)
+
+print(t.b)
+
+t.t1()
+t.stsmthd()
+t.clsmthd()
+
+print(Test.count)
+
+# deleting static variable
+# del Test.a
+# print(Test.a)
