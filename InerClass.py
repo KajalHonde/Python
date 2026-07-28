@@ -70,14 +70,15 @@ p.showdetails()
 
 class Test:
     def m1(self):
-        
-        def calc(self,a,b):
+        def calc(a,b):
             print("addition",a+b)
             print("substraction",a-b)
-            print("multiplication",a*b)
-        
-        calc(10,20)
+            print("multiplication",a*b)    
+            
+        a=int(input("enter the a value"))
+        b=int(input("enter the a value"))
+        calc(a,b)
             
 t=Test()
 t.m1()
-t.calc(10,2)
+# t.calc(10,2)
