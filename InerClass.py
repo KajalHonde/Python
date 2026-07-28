@@ -37,7 +37,7 @@ class Outer:
             self.inn.m1()
 
 o=Outer()
-'''
+
 class Person:
     def __init__(self,name,city,dd,mm,yy):
         self.name=name
@@ -66,3 +66,18 @@ yy=(int(input("enter yy")))
 
 p=Person(name,city,dd,mm,yy)
 p.showdetails()
+'''
+
+class Test:
+    def m1(self):
+        
+        def calc(self,a,b):
+            print("addition",a+b)
+            print("substraction",a-b)
+            print("multiplication",a*b)
+        
+        calc(10,20)
+            
+t=Test()
+t.m1()
+t.calc(10,2)
