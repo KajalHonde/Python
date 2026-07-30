@@ -8,7 +8,6 @@ print("Garbage collector is enabled",gc.isenabled())
 
 gc.disable()
 print("garbage collector is disable",gc.isenabled())
-'''
 
 import time
 class Test:
@@ -24,3 +23,23 @@ print("work done")
 t1=None
 time.sleep(10)
 print("end of application")
+
+'''
+
+import sys
+class Test:
+    def __init__(self):
+        print("constructor")
+        
+    def __del__(self):
+        print("destructor  invoked for clean up activity")
+        
+        
+t1=Test()
+t2=t1
+t3=t1
+
+print("Refrences variable count:",sys.getrefcount(t1))
+
+del t1
+print("Refrences variable count:",sys.getrefcount(t2))
