@@ -1,5 +1,5 @@
 from abc import *
-
+'''
 # class with abstract method
 class Employee(ABC):
     @abstractmethod
@@ -28,3 +28,6 @@ class Employee:
         
 e=Employee()
 e.empdetail()
+'''
+
+# abstarct class with
