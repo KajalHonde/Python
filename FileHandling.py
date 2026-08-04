@@ -119,7 +119,6 @@ f2.close()
 '''
 # list of numbers 
 
-
 l = [10, 15, 22, 35, 40, 51, 68, 79]
 
 fe = open("even.txt", "w")
