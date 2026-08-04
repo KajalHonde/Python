@@ -63,7 +63,7 @@ except ZeroDivisionError:
 finally:
     print("clean up activity")
     
-'''
+
 try:
     n1=int(input())
     n2=int(input())
@@ -77,3 +77,34 @@ finally:
     print("clean up activity")
     
 print("End of application")
+
+'''
+# user defined exception
+
+class MyException(Exception):
+    def __init__(self,message):
+        self.message=message
+class Bank:
+    def __init__(self,actno,balance=500):
+      self.actno=actno
+      self.balance=balance
+    #   self.withdraw=0
+      self.deposit=0
+      
+    def withdraw(self,amount):
+        if self.balance<amount:
+            raise MyException("Insufficient fund available")
+        else:
+            self.balance=self.balance-amount
+            
+    def showBalance(self):
+        print("Balance =", self.balance)
+
+b1=Bank(101,10000)
+print(b1.balance) 
+try:   
+    b1.withdraw(400)
+except MyException:
+    print("Insufficient Balance")
+print(b1.balance)    
+# showBalance()
