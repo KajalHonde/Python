@@ -68,7 +68,6 @@ f.seek(5)
 print(f.tell())
 data=f.read(6)
 
-'''
 f=open("Files.txt","w+")
 f.write("Kajal")
 print(f.tell())
@@ -76,3 +75,63 @@ f.seek(0)
 data=f.read()
 print(data)
 f.close()
+
+
+import os
+fname="c\\Files.txt"
+if os.path.isfile(fname):
+    f=open(fname,"r")
+    data=f.read()
+    print(data)
+    f.close()
+else:
+    print("File not found")
+    
+
+import os
+fname=input("Enter file name")
+if os.path.isfile(fname):
+    print("file with name",fname,"exists")
+    f=open(fname,'r')
+
+    lcount=wcount=ccount=0
+    for line in f:
+        lcount=lcount+1
+        ccount=ccount+len(line)
+        words=line.split()
+        wcount=wcount+len(words)
+        
+        print("no of lines:",lcount)
+        print("no of words:",wcount)
+        print("no of chars:",ccount)
+else:
+    print("File doesn't exists")
+    
+
+# Reading and writting binary File
+f1=open("background.jpg.","rb")
+f2=open("background.jpg.","wb")
+data=f1.read()
+f2.write(data)
+f1.close()
+f2.close()
+
+'''
+# list of numbers 
+
+
+l = [10, 15, 22, 35, 40, 51, 68, 79]
+
+fe = open("even.txt", "w")
+fo = open("odd.txt", "w")
+
+for i in l:
+    if i % 2 == 0:
+        fe.write(str(i) + "\n")
+    else:
+        fo.write(str(i) + "\n")
+
+fe.close()
+fo.close()
+
+print("Data Written Successfully")
