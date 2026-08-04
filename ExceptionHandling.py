@@ -97,8 +97,7 @@ class Bank:
         else:
             self.balance=self.balance-amount
             
-    def showBalance(self):
-        print("Balance =", self.balance)
+    
 
 b1=Bank(101,10000)
 print(b1.balance) 
@@ -106,5 +105,6 @@ try:
     b1.withdraw(400)
 except MyException:
     print("Insufficient Balance")
+    
 print(b1.balance)    
 # showBalance()
