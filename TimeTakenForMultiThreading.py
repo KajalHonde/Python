@@ -49,6 +49,8 @@ begintime=time.time()
 print(begintime)
 t1.start()
 t2.start()
+t1.join()
+t2.join()
 
 endtime=time.time()
 print("end time",endtime-begintime)
