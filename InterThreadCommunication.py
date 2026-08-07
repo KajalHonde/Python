@@ -1,6 +1,7 @@
+'''
 from threading import *
 import time
-'''
+
 # Using Event class
 
 e=Event()
@@ -49,7 +50,6 @@ t2=Thread(target=producer)
 t1.start()
 t2.start()
 
-'''
 # using Queue
 from threading import *
 import time
@@ -76,3 +76,45 @@ t1=Thread(target=consumer)
 t2=Thread(target=producer)
 t1.start()
 t2.start()
+
+# FIFO using Queue
+
+from threading import *
+import time
+import queue
+
+q=queue.Queue()
+q.put(10)
+q.put(2)
+
+while not q.empty():
+    print(q.get())
+    
+
+# Using LIFO
+from threading import *
+import time
+import queue
+
+q=queue.LifoQueue()
+q.put(10)
+q.put(2)
+
+while not q.empty():
+    print(q.get())
+    
+
+'''
+# priority Queue
+
+from threading import *
+import time
+import queue
+
+q=queue.PriorityQueue()
+q.put((1,"python"),)
+q.put((3,"java"),)
+q.put((2,"DA"),)
+
+while not q.empty():
+    print(q.get())
