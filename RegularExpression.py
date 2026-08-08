@@ -46,8 +46,7 @@ pattern=input("enter pattern:")
 matcher=re.finditer(pattern,str)
 for m in matcher:
     print(m.start(),"*****",m.group())
-    
-'''
+
 
  # Predefined classes
     
@@ -57,3 +56,110 @@ pattern=input("enter pattern:")
 matcher=re.finditer(pattern,str)
 for m in matcher:
     print(m.start(),"*****",m.group())
+    
+
+# Quantifiers
+
+import re
+str=input("enter main string:")
+pattern=input("enter pattern:")
+matcher=re.finditer(pattern,str)
+for m in matcher:
+    print(m.start(),"*****",m.group())
+    
+
+# Match()
+import re
+str=input("enter main string:")
+pattern=input("enter pattern:")
+m=re.match(pattern,str)
+
+if m!=None:
+    print("matched")
+    print("start index:",m.start())
+    print("end index:",m.end())
+else:
+    print("Not matched")
+    
+
+# fullmatch()
+import re
+str=input("enter main string:")
+pattern=input("enter pattern:")
+m=re.fullmatch(pattern,str)
+
+if m!=None:
+    print("matched")
+    print("start index:",m.start())
+    print("end index:",m.end())
+else:
+    print("Not matched")
+    
+
+# search()
+import re
+str=input("enter main string:")
+pattern=input("enter pattern:")
+m=re.search(pattern,str)
+
+if m!=None:
+    print("matched")
+    print("start index:",m.start())
+    print("end index:",m.end())
+else:
+    print("Not matched")
+
+# ^
+# $
+import re
+str=input("enter main string:")
+pattern=input("enter pattern:")
+m=re.search(pattern,str)
+
+if m!=None:
+    print("matched")
+    print("start index:",m.start())
+    print("end index:",m.end())
+else:
+    print("Not matched")
+    
+    
+
+# findall()
+import re
+str=input("enter main string:")
+pattern=input("enter pattern:")
+m=re.findall(pattern,str)
+
+if m!=None:
+    print("matched")
+else:
+    print("Not matched")
+  
+
+  
+# finditer()
+import re
+str=input("enter main string:")
+pattern=input("enter pattern:")
+m=re.search(pattern,str)
+
+if m!=None:
+    print("matched")
+    print("start index:",m.start())
+    print("end index:",m.end())
+else:
+    print("Not matched")
+    
+
+# subn()
+import re
+s=re.sub("[a-z]","#","kajalKAJALkajal")
+print(s)
+
+'''
+# split()
+import re
+s="python is easy"
+s1=re.split("/",s)
+print(s1)
